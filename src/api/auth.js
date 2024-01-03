@@ -13,7 +13,8 @@ export function getPasswordHint(account){ // 獲得某個帳號的密碼提示
     account: <string>輸入框的帳號
   
   return:
-    hint: <string>密碼提示 | <null>
+    if 帳號存在 -> <string>密碼提示
+		if 帳號不存在 -> <null>
 */
 
 export function userLogin(account, password){ // 送出登入請求
@@ -76,6 +77,6 @@ export function userLogout(){ // 登出
   // 可修改區 end
 }
 
-export function getRole(){ // 不是api,獲取身分組
-  return "admin"; // 測試中,勿動
+export function getRole(){ // 不是api, 從jwt獲取當前的身分組
+  return "user"; // 測試中,勿動
 }
