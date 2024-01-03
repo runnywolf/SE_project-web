@@ -103,6 +103,9 @@
   .navBar > a:not(:last-child):hover{
     background-color: #fff4;
   }
+	.navBar > a:last-child{
+		color: #00e;
+	}
   .navBar-selected{
     background-color: #fec !important;
   }

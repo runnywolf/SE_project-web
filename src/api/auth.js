@@ -78,5 +78,5 @@ export function userLogout(){ // 登出
 }
 
 export function getRole(){ // 不是api, 從jwt獲取當前的身分組
-  return "user"; // 測試中,勿動
+  return "admin"; // 測試中,勿動
 }
